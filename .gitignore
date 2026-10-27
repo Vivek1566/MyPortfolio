@@ -1,0 +1,11 @@
+node_modules/
+client/dist/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.DS_Store
+.agent/
+.ralphy/
+/Gemini_Generated_Image_18g2vm18g2vm18g2.jpg
+/WhatsApp Image 2026-10-24 at 1.31.00 PM.jpeg
