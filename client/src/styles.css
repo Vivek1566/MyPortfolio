@@ -642,6 +642,7 @@ h1, h2, h3 { font-family: var(--display); }
 .project-category { margin: 0 0 6px; color: var(--accent); font-size: 8px; letter-spacing: .8px; text-transform: uppercase; }
 .project-content h3 { margin: 0 0 8px; font-size: 22px; font-weight: 600; letter-spacing: -.03em; color: var(--text); }
 .project-summary { min-height: 45px; margin: 0; color: var(--text-body); font-size: 13px; line-height: 1.8; }
+.project-details { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.75; }
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 15px 0 17px; padding: 0; list-style: none; }
 .tag-list li { padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; background: rgba(199,98,30,0.07); color: var(--text-body); font: 8px var(--mono); }
 .project-links { display: flex; flex-wrap: wrap; gap: 19px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--text-body); font-size: 9px; }

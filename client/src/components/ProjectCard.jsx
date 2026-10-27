@@ -2,6 +2,7 @@ import { githubProfile, projects } from "../data/projects.js";
 
 export default function ProjectCard({ project }) {
   const projectIndex = projects.indexOf(project);
+  const repositoryUrl = `${githubProfile}/${project.repo}`;
 
   return (
     <article
@@ -12,7 +13,7 @@ export default function ProjectCard({ project }) {
       {/* Visual banner — scenic landscape with project tint overlay */}
       <a
         className="project-visual"
-        href={`${githubProfile}/${project.repo}`}
+        href={repositoryUrl}
         target="_blank"
         rel="noreferrer"
         aria-label={`View ${project.name} on GitHub`}
@@ -29,11 +30,12 @@ export default function ProjectCard({ project }) {
         <p className="project-category">{project.category}</p>
         <h3>{project.name}</h3>
         <p className="project-summary">{project.summary}</p>
+        <p className="project-details">{project.details}</p>
         <ul className="tag-list" aria-label="Technologies and themes">
           {project.stack.map((tag) => <li key={tag}>{tag}</li>)}
         </ul>
         <div className="project-links">
-          <a href={`${githubProfile}/${project.repo}`} target="_blank" rel="noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
+          <a href={repositoryUrl} target="_blank" rel="noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
           {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>}
         </div>
       </div>
