@@ -2,6 +2,11 @@
 
 A React portfolio built with Vite, GSAP, and Three.js.
 
+## Live Demo
+
+https://vivek1566.github.io/MyPortfolio/
+
+
 ## Development
 
 Requirements: Node.js 20+.
