@@ -15,9 +15,8 @@
     <a href="https://github.com/Vivek1566" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-Vivek1566-181717?style=for-the-badge&logo=github" alt="GitHub" />
     </a>
-    <a href="mailto:vivekrajak3004@gmail.com">
-      <img src="https://img.shields.io/badge/Email-vivekrajak3004@gmail.com-D14836?style=for-the-badge&logo=gmail" alt="Email" />
-    </a>
+   
+     
   </p>
 
 </div>
