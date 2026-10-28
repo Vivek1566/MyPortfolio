@@ -9,9 +9,11 @@ const skills = ["React", "JavaScript", "TypeScript", "Python", "FastAPI", "Machi
 
 gsap.registerPlugin(ScrollTrigger);
 
+const assetUrl = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const imageCards = [
   {
-    source: "/images/vivek-portrait.jpg",
+    source: assetUrl("images/vivek-portrait.jpg"),
     width: 2.35,
     height: 3.13,
     x: 0.15,
@@ -21,7 +23,7 @@ const imageCards = [
     depth: 0.9,
   },
   {
-    source: "/images/portfolio-atmosphere.jpg",
+    source: assetUrl("images/portfolio-atmosphere.jpg"),
     width: 1.95,
     height: 1.38,
     x: -0.8,
@@ -31,7 +33,7 @@ const imageCards = [
     depth: -0.7,
   },
   {
-    source: "/images/hero-bg.png",
+    source: assetUrl("images/hero-bg.png"),
     width: 1.35,
     height: 1.4,
     x: 1.25,
@@ -255,9 +257,9 @@ function HeroImageScene() {
   return (
     <div className={`hero-image-scene${webglUnavailable ? " is-fallback" : ""}`} aria-hidden="true">
       <div className="hero-image-fallback">
-        <img className="fallback-photo fallback-photo-main" src="/images/vivek-portrait.jpg" alt="" />
-        <img className="fallback-photo fallback-photo-left" src="/images/portfolio-atmosphere.jpg" alt="" />
-        <img className="fallback-photo fallback-photo-right" src="/images/hero-bg.png" alt="" />
+        <img className="fallback-photo fallback-photo-main" src={assetUrl("images/vivek-portrait.jpg")} alt="" />
+        <img className="fallback-photo fallback-photo-left" src={assetUrl("images/portfolio-atmosphere.jpg")} alt="" />
+        <img className="fallback-photo fallback-photo-right" src={assetUrl("images/hero-bg.png")} alt="" />
       </div>
       <div ref={mountRef} className="hero-image-canvas" />
     </div>
